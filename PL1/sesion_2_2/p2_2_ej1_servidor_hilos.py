@@ -1,16 +1,31 @@
-hilo = threarding.Thread(target=hoal()) (si pones () no ejecuta la funcion (mete en target lo q retorna y si no retorna
-nada retorna none))
-% con esto sobreescribimos el hilo (en este caso da igual)
-for i in range(5):
-    hilo = threarding.Thread(target=hoal)
-    hilo.start() 
+import socket
+import threading
+import sys
 
-print("Hilos lanzados")
+def dar_servicio(sd, addr):
+    nombre_hilo = threading.current_thread().name
+    print("El cliente", addr, "se a conectado :) y lo esta antendiendo", nombre_hilo)
 
-def hola(quien):
-    time.sleep(2)
-    print("Hola ", quien)
+    while True:
+        data = sd.recv(1024)
+        if not data:
+            print("El Cliente", addr, "se a desconectado :( y lo estaba antendiendo", nombre_hilo)
+            break
+        sd.sendall(data)
 
-personas = ["Ana", "Luis", "Pedro", "Maria", "Jorge"]
-for per in range personas:
-    hilo = threarding.Thread(target=hola, args=(per,))
+    sd.close()
+
+def hilo_jefe(host, port):
+    s = socket.socket()
+    s.bind((host, port))
+    s.listen(10)
+
+    while True:
+        print("Esperando cliente...")
+        sd, addr = s.accept()
+        th = threading.Thread(target=dar_servicio, args=(sd, addr))
+        th.start()
+
+PORT = int(sys.argv[1])
+jefe = threading.Thread(target=hilo_jefe, args=("0.0.0.0", PORT))
+jefe.start()
