@@ -1,5 +1,6 @@
 import socket
 import random
+import threading
 
 HOST = '0.0.0.0'
 PORT = 8888
@@ -7,6 +8,7 @@ PORT = 8888
 def jugar(conn):
     conn.sendall("Bienvenido/a al juego. ¿Cómo te llamas?\n"
                  .encode("utf-8"))
+
     nombre = conn.recv(1024).decode("utf-8").strip()
     numero = random.randint(1, 100)
     intentos = 0
@@ -32,6 +34,11 @@ def jugar(conn):
         except ValueError:
             conn.sendall("Por favor, introduce un numero\n".encode("utf-8"))
 
+def atender_cliente(sd, addr):
+    print(f"Jugador conectado: {addr}")
+    jugar(sd)
+    sd.close()
+
 def main():
     sp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sp.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -40,9 +47,8 @@ def main():
     print(f"Servidor Iterativo escuchando en {HOST}:{PORT}")
     while True:
         sd, addr = sp.accept()
-        print(f"Jugador conectado: {addr}")
-        jugar(sd)
-        sd.close()
+        hilo = threading.Thread(target=atender_cliente, args=(sd, addr))
+        hilo.start()
 
 if __name__ == "__main__":
     main()
