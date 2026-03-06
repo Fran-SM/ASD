@@ -5,10 +5,15 @@ import sys
 
 
 class ChatProtocol(asyncio.DatagramProtocol):
+    # Esta funcion se ejecuta automaticamente cuando llega un datagrama UDP
     def datagram_received(self, data, addr):
-        mensaje = data.decode().strip()
-        print("\n" + mensaje, flush=True)
-      
+        try:
+            mensaje = data.decode().strip()
+            print("\n" + mensaje, flush=True)
+        except:
+            print("\n[ERROR] No se pudo decodificar el mensaje recibido", flush=True)
+
+
 async def shell_interactivo(transport, nick):
 
     reader = asyncio.StreamReader()
@@ -18,6 +23,7 @@ async def shell_interactivo(transport, nick):
     # Conectar el teclado al bucle de eventos
     await loop.connect_read_pipe(lambda: protocol, sys.stdin)
 
+    # Aqui guardamos la IP y puerto del destinatario actual
     destino = None
 
     while True:
@@ -26,7 +32,7 @@ async def shell_interactivo(transport, nick):
         # Esperamos una linea por teclado
         linea = await reader.readline()
 
-        # Si no llega nada, esperamos 
+        # Si no llega nada, seguimos esperando
         if not linea:
             continue
 
@@ -34,8 +40,8 @@ async def shell_interactivo(transport, nick):
         linea = linea.decode().strip()
 
         # Si el usuario solo pulsa ENTER, no hacemos nada
-        #if linea == "":
-        #    continue
+        if linea == "":
+            continue
 
         # Si la linea empieza por /QUIT, terminamos el programa
         if linea.startswith("/QUIT"):
@@ -45,23 +51,50 @@ async def shell_interactivo(transport, nick):
         # Si la linea empieza por /CONNECT, cambiamos el destino activo
         elif linea.startswith("/CONNECT"):
             vectorEntrada = linea.split()
+
+            # Comprobamos que haya 3 partes:
+            # /CONNECT ip puerto
+            if len(vectorEntrada) != 3:
+                print("Uso correcto: /CONNECT <ip> <puerto>")
+                continue
+
             ip_destino = vectorEntrada[1]
-            puerto_destino = int(vectorEntrada[2])
+
+            try:
+                puerto_destino = int(vectorEntrada[2])
+            except ValueError:
+                print("El puerto debe ser un numero entero")
+                continue
+
             destino = (ip_destino, puerto_destino)
             print("Conectado al destino", destino)
 
         # Si no es un comando especial, se trata como mensaje normal
         else:
-            mensaje = "("+ nick +") " + "> " + linea
+            # Si no hay destino, no se puede enviar
+            if destino is None:
+                print("No hay destino seleccionado. Usa /CONNECT <ip> <puerto>")
+                continue
+
+            mensaje = "(" + nick + ") > " + linea
 
             # Enviar por UDP al destino actual
             transport.sendto(mensaje.encode(), destino)
 
 
 async def main():
-    nick = sys.argv[1]
-    puerto_local = int(sys.argv[2])
+    # Comprobar argumentos de linea de comandos
+    if len(sys.argv) != 3:
+        print("Uso: python3 p2_5_ej1_chat_async.py <nick> <puerto>")
+        sys.exit(1)
 
+    nick = sys.argv[1]
+
+    try:
+        puerto_local = int(sys.argv[2])
+    except ValueError:
+        print("El puerto local debe ser un numero entero")
+        sys.exit(1)
 
     loop = asyncio.get_running_loop()
 
