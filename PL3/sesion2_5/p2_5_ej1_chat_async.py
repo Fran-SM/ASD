@@ -1,5 +1,3 @@
-# p2_5_ej1_chat_async.py
-
 import asyncio
 import sys
 
@@ -23,7 +21,7 @@ async def shell_interactivo(transport, nick):
     # Conectar el teclado al bucle de eventos
     await loop.connect_read_pipe(lambda: protocol, sys.stdin)
 
-    # Aqui guardamos la IP y puerto del destinatario actual
+
     destino = None
 
     while True:
@@ -39,25 +37,18 @@ async def shell_interactivo(transport, nick):
         # Pasamos de bytes a texto y quitamos espacios/saltos sobrantes
         linea = linea.decode().strip()
 
-        # Si el usuario solo pulsa ENTER, no hacemos nada
+
         if linea == "":
             continue
 
-        # Si la linea empieza por /QUIT, terminamos el programa
+
         if linea.startswith("/QUIT"):
             print("Cerrando chat...")
             break
 
-        # Si la linea empieza por /CONNECT, cambiamos el destino activo
+
         elif linea.startswith("/CONNECT"):
             vectorEntrada = linea.split()
-
-            # Comprobamos que haya 3 partes:
-            # /CONNECT ip puerto
-            if len(vectorEntrada) != 3:
-                print("Uso correcto: /CONNECT <ip> <puerto>")
-                continue
-
             ip_destino = vectorEntrada[1]
 
             try:
@@ -69,7 +60,7 @@ async def shell_interactivo(transport, nick):
             destino = (ip_destino, puerto_destino)
             print("Conectado al destino", destino)
 
-        # Si no es un comando especial, se trata como mensaje normal
+
         else:
             # Si no hay destino, no se puede enviar
             if destino is None:
@@ -83,18 +74,8 @@ async def shell_interactivo(transport, nick):
 
 
 async def main():
-    # Comprobar argumentos de linea de comandos
-    if len(sys.argv) != 3:
-        print("Uso: python3 p2_5_ej1_chat_async.py <nick> <puerto>")
-        sys.exit(1)
-
     nick = sys.argv[1]
-
-    try:
-        puerto_local = int(sys.argv[2])
-    except ValueError:
-        print("El puerto local debe ser un numero entero")
-        sys.exit(1)
+    puerto_local = int(sys.argv[2])
 
     loop = asyncio.get_running_loop()
 
@@ -110,10 +91,10 @@ async def main():
     print("Usa /QUIT para salir")
 
     try:
-        # Lanzamos el shell interactivo
+
         await shell_interactivo(transport, nick)
     finally:
-        # Cerrar el socket UDP al terminar
+
         transport.close()
 
 

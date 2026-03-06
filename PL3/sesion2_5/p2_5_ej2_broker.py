@@ -1,5 +1,3 @@
-# p2_5_ej2_broker.py
-
 import socket
 
 HOST = "0.0.0.0"
@@ -76,5 +74,4 @@ while True:
     print("Respuesta enviada:", respuesta.strip())
     print("Usuarios registrados:", usuarios)
 
-    # Cerrar la conexion con este cliente
     conn.close()
