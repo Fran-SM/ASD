@@ -1,0 +1,786 @@
+[
+  {
+    "nombre": "RODRIGUEZ-PELAEZ PEÑA, ANA MARIA",
+    "direccion": "AVDA. DE AMERICA  2-33880",
+    "codigo_postal": 33880,
+    "telefono": "985807047",
+    "poblacion": "POLA DE ALLANDE",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "MENENDEZ FERNANDEZ, M. ISABEL Y HDROS. MARIA FERNANDEZ GONZALEZ",
+    "direccion": "C/ CONSTITUCION  15-33670",
+    "codigo_postal": 33670,
+    "telefono": "985480856",
+    "poblacion": "MOREDA",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "IBAÑEZ FUEYO, ANA",
+    "direccion": "C/ FRANCISCO CABRERA  2-33686",
+    "codigo_postal": 33686,
+    "telefono": "985494042",
+    "poblacion": "CABAÑAQUINTA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "JUSTINIANO HURLE, ELSA MARIA",
+    "direccion": "C/ SAN AGUSTIN,   6-33400",
+    "codigo_postal": 33400,
+    "telefono": "985567087",
+    "poblacion": "AVILES",
+    "horario": "Desde las 10 de la noche de ayer a las 9,30 horas de hoy"
+  },
+  {
+    "nombre": "GAYA CEREZO, MARCOS Y GAYA CEREZO, SUSANA",
+    "direccion": "C/ FERNANDEZ BALSERA,  16-33400",
+    "codigo_postal": 33400,
+    "telefono": "985566329",
+    "poblacion": "AVILES",
+    "horario": "De 9,30 horas a 10 de la noche"
+  },
+  {
+    "nombre": "OYARZABAL GARCIA, ALICIA",
+    "direccion": "PLAZA DE LA HISPANIDAD -VILLALEGRE  6-33403",
+    "codigo_postal": 33403,
+    "telefono": "985571228",
+    "poblacion": "AVILES",
+    "horario": "Lunes a sábado de 9,30 de la mañana a 10 de la noche. Domingos y festivos: de 10 de la mañana a 10 de la noche"
+  },
+  {
+    "nombre": "BARRAL GAVILANES, SARA",
+    "direccion": "C/ RIVERO  115-33400",
+    "codigo_postal": 33400,
+    "telefono": "985543160",
+    "poblacion": "AVILES",
+    "horario": "De 9,30 horas a 10 de la noche"
+  },
+  {
+    "nombre": "SUAREZ HURLE, SUSANA MIREYA",
+    "direccion": "PLAZA DE PEDRO MENENDEZ  8-33400",
+    "codigo_postal": 33400,
+    "telefono": "985561632",
+    "poblacion": "AVILES",
+    "horario": "Desde las 10 de la noche de hoy a las 9,30 horas de mañana"
+  },
+  {
+    "nombre": "PRIETO FERNANDEZ, M. MILAGROS",
+    "direccion": "AVDA. DEL PUERTO  S/N-33830",
+    "codigo_postal": 33830,
+    "telefono": "985762023",
+    "poblacion": "BELMONTE DE MIRANDA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "JIMENEZ DEL VALLE, ALVARO",
+    "direccion": "C/ MARTIMPORRA  1-33527",
+    "codigo_postal": 33527,
+    "telefono": "985700134",
+    "poblacion": "BIMENES",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "MEDIAVILLA BUENO, CRISTINA",
+    "direccion": "C/ MELQUIADES ALVAREZ  S/N-33720",
+    "codigo_postal": 33720,
+    "telefono": "985620019",
+    "poblacion": "BOAL",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "GARCIA BERNARDO, MARINA Y NEIRA SUAREZ, ALFONSO",
+    "direccion": "CRTA. GENERAL  S/N-33555",
+    "codigo_postal": 33555,
+    "telefono": "985845381",
+    "poblacion": "CARREÑA DE CABRALES",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "GOMEZ MUÑOZ, ANDREA",
+    "direccion": "C/ GUTIERRE DE HEVIA,  S/N-33535",
+    "codigo_postal": 33535,
+    "telefono": "985898000",
+    "poblacion": "SANTA EULALIA DE CABRANES",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "RUIZ REY, JORGE",
+    "direccion": "PLAZA FUMAYOR  196-33828",
+    "codigo_postal": 33828,
+    "telefono": "985828016",
+    "poblacion": "SAN ROMAN DE CANDAMO",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "RILLA TUERO, PALOMA Y RILLA TUERO, M. GLORIA",
+    "direccion": "C/ SAN PELAYO  7-33550",
+    "codigo_postal": 33550,
+    "telefono": "985848028",
+    "poblacion": "CANGAS DE ONIS",
+    "horario": "De las 9 h. del viernes a las 9 h. del viernes siguiente (Guardia no presencial)"
+  },
+  {
+    "nombre": "MARCOS ALBALADEJO, JAIME",
+    "direccion": "C/ MAYOR  28-33800",
+    "codigo_postal": 33800,
+    "telefono": "985810113",
+    "poblacion": "CANGAS DEL NARCEA",
+    "horario": "De 9 de la mañana de hoy a 9 de la mañana de mañana"
+  },
+  {
+    "nombre": "CONCEPCION COSSENT, OLAYA",
+    "direccion": "C/ CARRETERA GENERAL  7-33811",
+    "codigo_postal": 33811,
+    "telefono": "985911195",
+    "poblacion": "VENTANUEVA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "GARCIA MARTINEZ, ALEJANDRA",
+    "direccion": "CRTA. GENERAL,  11-33816",
+    "codigo_postal": 33816,
+    "telefono": "985918515",
+    "poblacion": "TEBONGO",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "FERNANDEZ PRIETO, CARLOS",
+    "direccion": "AVDA. REINA CRISTINA   S/N-33430",
+    "codigo_postal": 33430,
+    "telefono": "985870093",
+    "poblacion": "CANDAS",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "GONZALEZ MENDEZ, VICTOR LUIS",
+    "direccion": "PLAZA DE FELIPE ALVAREZ  S/N-33990",
+    "codigo_postal": 33990,
+    "telefono": "985608028",
+    "poblacion": "CAMPO DE CASO",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "GARCIA DE LA MATA FERNANDEZ, SANDRA",
+    "direccion": "C/ ALCALDE JOSE FERNANDIN,  25-33450",
+    "codigo_postal": 33450,
+    "telefono": "985530057",
+    "poblacion": "PIEDRAS BLANCAS",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "MENDEZ ALVAREZ, MARIA LUZ",
+    "direccion": "C/ MOHIAS  S/N-33719",
+    "codigo_postal": 33719,
+    "telefono": "985473964",
+    "poblacion": "MOHIAS (Coaña)",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "DIAZ MORO, MARIO",
+    "direccion": "C/ SAN ANTONIO   S/N-33330",
+    "codigo_postal": 33330,
+    "telefono": "985850116",
+    "poblacion": "LASTRES",
+    "horario": "De 9,25 de la mañana de hoy a 9,25 de la mañana de mañana"
+  },
+  {
+    "nombre": "MENENDEZ ANTOLIN, MARTA",
+    "direccion": "C/ GRAL. GARCIA DE LA CONCHA  2-33150",
+    "codigo_postal": 33150,
+    "telefono": "985590058",
+    "poblacion": "CUDILLERO",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "NAVARRO PEREZ, CARMEN - HDROS. DE",
+    "direccion": "CRTA. N-632  S/N-33156",
+    "codigo_postal": 33156,
+    "telefono": "985596004",
+    "poblacion": "SOTO DE LUIÑA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "BORRAS GARCIA, ENRIQUE ANTONIO",
+    "direccion": "C/ PARROCO ROCHA  4-33750",
+    "codigo_postal": 33750,
+    "telefono": "985478022",
+    "poblacion": "LA CARIDAD",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "LUACES CUETO, ANA Y LUACES CUETO, BELEN",
+    "direccion": "C/ JOSE DE LAS CLOTAS  3-33205",
+    "codigo_postal": 33205,
+    "telefono": "985342861",
+    "poblacion": "GIJON",
+    "horario": "De 9,30 horas a 10 de la noche"
+  },
+  {
+    "nombre": "MENENDEZ ACEBAL, LINO",
+    "direccion": "C/ MARQUES DE URQUIJO  23-33203",
+    "codigo_postal": 33203,
+    "telefono": "985363769",
+    "poblacion": "GIJON",
+    "horario": "De 9,30 horas a 10 de la noche"
+  },
+  {
+    "nombre": "MERINO BADA, IGNACIO Y MERINO BADA, ARANZAZU",
+    "direccion": "AVDA. DEL LLANO  57-33209",
+    "codigo_postal": 33209,
+    "telefono": "985399411",
+    "poblacion": "GIJON",
+    "horario": "De 9,30 horas a 10 de la noche"
+  },
+  {
+    "nombre": "BLANCO MENDEZ, ENGRACIA ELVIRA",
+    "direccion": "C/ URUGUAY  2-33212",
+    "codigo_postal": 33212,
+    "telefono": "985321474",
+    "poblacion": "GIJON",
+    "horario": "De 9,30 horas a 10 de la noche"
+  },
+  {
+    "nombre": "MERINO BADA, IGNACIO Y MERINO BADA, ARANZAZU",
+    "direccion": "AVDA. DEL LLANO  57-33209",
+    "codigo_postal": 33209,
+    "telefono": "985399411",
+    "poblacion": "GIJON",
+    "horario": "Las 24 horas"
+  },
+  {
+    "nombre": "OCAÑA SANCHEZ, CARLOS",
+    "direccion": "PASEO DE BEGOÑA  7-33201",
+    "codigo_postal": 33201,
+    "telefono": "985342518",
+    "poblacion": "GIJON",
+    "horario": "Las 24 horas"
+  },
+  {
+    "nombre": "PEREZ MORI, ANA",
+    "direccion": "C/ CONDE DEL REAL AGRADO,  15-33440",
+    "codigo_postal": 33440,
+    "telefono": "985880038",
+    "poblacion": "LUANCO",
+    "horario": "De 9 de la mañana de hoy a 9 de la mañana de mañana"
+  },
+  {
+    "nombre": "SUAREZ MUÑIZ, MARIA",
+    "direccion": "C/ LA PEÑA - MOLINO  6-33449",
+    "codigo_postal": 33449,
+    "telefono": "985882478",
+    "poblacion": "MANZANEDA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "HERAS MONFORTE, M.TERESA DE LAS Y HERAS MONFORTE, NICOLAS DE LAS",
+    "direccion": "PLAZA GENERAL PONTE,  4-33820",
+    "codigo_postal": 33820,
+    "telefono": "985750699",
+    "poblacion": "GRADO",
+    "horario": "De 9 de la mañana de hoy a 9 de la mañana de mañana"
+  },
+  {
+    "nombre": "ALONSO ANTON, ELISA",
+    "direccion": "C/ PEDRO DE PEDRE  S/N-33730",
+    "codigo_postal": 33730,
+    "telefono": "985627047",
+    "poblacion": "GRANDAS DE SALIME",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "MENENDEZ MATHE, ELENA",
+    "direccion": "C/ CASA PEÑA, BARRIO DEL SOL,  S/N-33810",
+    "codigo_postal": 33810,
+    "telefono": "985816180",
+    "poblacion": "SAN ANTOLIN DE IBIAS",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "FERNANDEZ HUERTA, ALBERTO",
+    "direccion": "C/ DORADO  5-33900",
+    "codigo_postal": 33900,
+    "telefono": "985696899",
+    "poblacion": "SAMA",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "GRECIET RODRIGUEZ, HORACIO SANTIAGO",
+    "direccion": "AVDA. DE LAVIANA  4-33900",
+    "codigo_postal": 33900,
+    "telefono": "985692352",
+    "poblacion": "CIAÑO",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "FERNANDEZ MARTINEZ, DIANA",
+    "direccion": "C/ PADRE VALDES  3-33980",
+    "codigo_postal": 33980,
+    "telefono": "985600071",
+    "poblacion": "POLA DE LAVIANA",
+    "horario": "De 9 de la mañana de hoy a 9 de la mañana de mañana"
+  },
+  {
+    "nombre": "RODRIGUEZ VEGA, COVADONGA",
+    "direccion": "AVDA. PRINCIPADO - ESQ.  C/ PEÑAMAYOR,  S/N-33970",
+    "codigo_postal": 33970,
+    "telefono": "985601654",
+    "poblacion": "BARREDOS",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "ADDEO RIVERO, MARIELA",
+    "direccion": "AVDA. DE LA CONSTITUCION,  6-33630",
+    "codigo_postal": 33630,
+    "telefono": "985490156",
+    "poblacion": "POLA DE LENA",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "ALVAREZ ALONSO, BEATRIZ",
+    "direccion": "C/ PORTALON  18-33620",
+    "codigo_postal": 33620,
+    "telefono": "985496492",
+    "poblacion": "CAMPOMANES",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "ALVAREZ ALONSO, BEATRIZ",
+    "direccion": "C/ PORTALON  18-33620",
+    "codigo_postal": 33620,
+    "telefono": "985496492",
+    "poblacion": "CAMPOMANES",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "LOZANO VALLEDOR, JESUS",
+    "direccion": "C/ DR. FLEMING  3-33690",
+    "codigo_postal": 33690,
+    "telefono": "985773325",
+    "poblacion": "LUGO DE LLANERA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "BUJ GONZALEZ, MARIANO JAVIER",
+    "direccion": "C/ MERCADERES  8-33500",
+    "codigo_postal": 33500,
+    "telefono": "985400919",
+    "poblacion": "LLANES",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "PIÑERA RUBIERA, BEATRIZ",
+    "direccion": "PLAZA LAVERDE RUIZ,  S/N-33592",
+    "codigo_postal": 33592,
+    "telefono": "985410249",
+    "poblacion": "NUEVA DE LLANES",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "ARDISANA ABEGO, MANUEL ANGEL",
+    "direccion": "C/ LOS TAMARGOS,  2-33594",
+    "codigo_postal": 33594,
+    "telefono": "985407188",
+    "poblacion": "POSADA DE LLANES",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "CARREIRA GONZALEZ, IRIA ANXELA",
+    "direccion": "C/ SAN JOSE DE CALASANZ  14-33600",
+    "codigo_postal": 33600,
+    "telefono": "985464348",
+    "poblacion": "MIERES",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "OCIO LOPEZ, MARCIAL SANTIAGO",
+    "direccion": "C/ SAN ANDRES,  2-33610",
+    "codigo_postal": 33610,
+    "telefono": "985432469",
+    "poblacion": "SAN ANDRES - TURON",
+    "horario": "De 9 de la mañana de hoy a 9 de la mañana de mañana"
+  },
+  {
+    "nombre": "SUAREZ ANTUÑA, IRENE",
+    "direccion": "C/ CARRETERA GENERAL,  18-33161",
+    "codigo_postal": 33161,
+    "telefono": "985795298",
+    "poblacion": "LA FOZ DE MORCIN",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "MOTTO REVILLA, ARTURO",
+    "direccion": "C/ COLEGIATA  21-33520",
+    "codigo_postal": 33520,
+    "telefono": "985717073",
+    "poblacion": "NAVA",
+    "horario": "De 9 de la mañana de hoy a 9 de la mañana de mañana"
+  },
+  {
+    "nombre": "MENDEZ-CASTRILLON RODRIGUEZ, M. PAZ",
+    "direccion": "C/ REGUERAL  7-33710",
+    "codigo_postal": 33710,
+    "telefono": "985630501",
+    "poblacion": "NAVIA",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "GAVILAN ALVAREZ, M. ESTHER",
+    "direccion": "C/ PARROCO PENZOL  S/N-33790",
+    "codigo_postal": 33790,
+    "telefono": "985648001",
+    "poblacion": "PUERTO DE VEGA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "ALONSO GARCIA, JOSE ANTONIO",
+    "direccion": "C/ FLOREZ ESTRADA,   11-33180",
+    "codigo_postal": 33180,
+    "telefono": "985741655",
+    "poblacion": "NOREÑA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "GRAU BRAGADO, EMILIA C Y GRAU BRAGADO, JAIME IGNACIO",
+    "direccion": "C/ GONZALEZ BESADA,  16-33007",
+    "codigo_postal": 33007,
+    "telefono": "985237864",
+    "poblacion": "OVIEDO",
+    "horario": "Desde las 10 de la noche de ayer a las 9,30 horas de hoy"
+  },
+  {
+    "nombre": "CHAMOUN OLEA, ANDREA",
+    "direccion": "C/ BERMUDEZ DE CASTRO  2-33011",
+    "codigo_postal": 33011,
+    "telefono": "985282820",
+    "poblacion": "OVIEDO",
+    "horario": "Desde las 10 de la noche de ayer a las 9,30 horas de hoy"
+  },
+  {
+    "nombre": "ALONSO NESTARES, JAVIER Y ALONSO NESTARES, M. ISABEL",
+    "direccion": "C/ URIA  36-33003",
+    "codigo_postal": 33003,
+    "telefono": "985223925",
+    "poblacion": "OVIEDO",
+    "horario": "De 9,30 horas a 10 de la noche"
+  },
+  {
+    "nombre": "CAVIA SANCHEZ, M. PILAR",
+    "direccion": "C/ DOCTOR CASAL  8-33001",
+    "codigo_postal": 33001,
+    "telefono": "985218599",
+    "poblacion": "OVIEDO",
+    "horario": "De 9,30 horas a 10 de la noche"
+  },
+  {
+    "nombre": "GOMEZ PRADO, M. LUISA",
+    "direccion": "C/ MAGDALENA  17-33009",
+    "codigo_postal": 33009,
+    "telefono": "985213084",
+    "poblacion": "OVIEDO",
+    "horario": "De 9,30 horas a 10 de la noche"
+  },
+  {
+    "nombre": "GARCIA MONTES,  M. DEL PILAR",
+    "direccion": "C/ ARZOBISPO GUISASOLA  26-33009",
+    "codigo_postal": 33009,
+    "telefono": "985227271",
+    "poblacion": "OVIEDO",
+    "horario": "De 9,30 horas a 10 de la noche"
+  },
+  {
+    "nombre": "MARQUIEGUI RODRIGUEZ, M. ALEIDA Y MARQUIEGUI RODRIGUEZ, M. ASUNCION",
+    "direccion": "C/ NUEVE DE MAYO,  9-33002",
+    "codigo_postal": 33002,
+    "telefono": "985219111",
+    "poblacion": "OVIEDO",
+    "horario": "Desde las 10 de la noche de hoy a las 9,30 horas de mañana"
+  },
+  {
+    "nombre": "CALVO PEREZ, ASUNCION MARIA",
+    "direccion": "C/ ALCALDE GARCIA CONDE,  11-33001",
+    "codigo_postal": 33001,
+    "telefono": "985222288",
+    "poblacion": "OVIEDO",
+    "horario": "Desde las 10 de la noche de hoy a las 9,30 horas de mañana"
+  },
+  {
+    "nombre": "HEVIA RUIZ, M. DEL MAR",
+    "direccion": "C/ ARGUELLES  4-33540",
+    "codigo_postal": 33540,
+    "telefono": "985840006",
+    "poblacion": "ARRIONDAS",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "FERNANDEZ DE RETANA MOLINA, MONICA A.",
+    "direccion": "C/ CARRETERA GENERAL,  S/N-33578",
+    "codigo_postal": 33578,
+    "telefono": "985415761",
+    "poblacion": "ALLES",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "FIDALGO FERNANDEZ, PABLO",
+    "direccion": "TRAVESIA DE PANES  83-33570",
+    "codigo_postal": 33570,
+    "telefono": "985414000",
+    "poblacion": "PANES",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "GARCIA DIAZ, ANDREA",
+    "direccion": "C/ PUENTE NUEVO  2-33530",
+    "codigo_postal": 33530,
+    "telefono": "985710041",
+    "poblacion": "INFIESTO",
+    "horario": "De 9 de la mañana de hoy a 9 de la mañana de mañana"
+  },
+  {
+    "nombre": "BARRERO FLOREZ, M. DOLORES",
+    "direccion": "C/ BANCES Y VALDES,  1-33120",
+    "codigo_postal": 33120,
+    "telefono": "985820717",
+    "poblacion": "PRAVIA",
+    "horario": "De 9 de la mañana de hoy a 9 de la mañana de mañana"
+  },
+  {
+    "nombre": "GONZALEZ MENAZA, ROSARIO ANA",
+    "direccion": "C/ CARRETERA GENERAL,  S/N-33114",
+    "codigo_postal": 33114,
+    "telefono": "985761655",
+    "poblacion": "PROAZA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "MONASTERIO ALVAREZ, JOAQUIN MANUEL",
+    "direccion": "CRTA. GENERAL  S/N-33117",
+    "codigo_postal": 33117,
+    "telefono": "985768104",
+    "poblacion": "BARZANA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "CARRIO CRESPO, ALEJANDRA",
+    "direccion": "C/ PIO NORIEGA,  12-33590",
+    "codigo_postal": 33590,
+    "telefono": "985412217",
+    "poblacion": "COLOMBRES",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "GARCIA CASALS, ROSA MARIA",
+    "direccion": "C/ COMERCIO  10-33560",
+    "codigo_postal": 33560,
+    "telefono": "985860201",
+    "poblacion": "RIBADESELLA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "RODRIGUEZ DE LA FLOR GARCIA, MARIA",
+    "direccion": "C/ EL PICU,  8-33560",
+    "codigo_postal": 33560,
+    "telefono": "985860958",
+    "poblacion": "RIBADESELLA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "BOBES SAN EMETERIO, ISABEL",
+    "direccion": "C/ PZ. DEL AYUNTAMIENTO   S/N-33172",
+    "codigo_postal": 33172,
+    "telefono": "985796014",
+    "poblacion": "SOTO DE RIBERA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "MENDEZ VELASCO, ANTONIO",
+    "direccion": "AVDA. AVENIDA DEL ARAMO  13-33160",
+    "codigo_postal": 33160,
+    "telefono": "985766023",
+    "poblacion": "RIOSA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "BALDONEDO MOSTEIRO, CARMEN",
+    "direccion": "AVDA. DE LA VEGA  3-33940",
+    "codigo_postal": 33940,
+    "telefono": "985660082",
+    "poblacion": "EL ENTREGO",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "FUERTES GARCIA, ANA",
+    "direccion": "PLAZA DEL AYUNTAMIENTO  10-33860",
+    "codigo_postal": 33860,
+    "telefono": "985830918",
+    "poblacion": "SALAS",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "HERNANDEZ DIAZ, MARIA",
+    "direccion": "AVDA. FERNANDEZ PELLO  70-33850",
+    "codigo_postal": 33850,
+    "telefono": "985834003",
+    "poblacion": "CORNELLANA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "GARCIA GAZAPO, JOSE LUIS",
+    "direccion": "CRTA. GENERAL,  73-33891",
+    "codigo_postal": 33891,
+    "telefono": "985837391",
+    "poblacion": "LA ESPINA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "MARTINEZ FERNANDEZ, ANA MARIA",
+    "direccion": "C/ LA CARRETERA,  S/N-33777",
+    "codigo_postal": 33777,
+    "telefono": "985621369",
+    "poblacion": "SAN MARTIN DE OSCOS",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "POMBO RODRIGUEZ, MIGUEL SANTIAGO",
+    "direccion": "C/ LA PLAZA  S/N-33776",
+    "codigo_postal": 33776,
+    "telefono": "985626068",
+    "poblacion": "SANTA EULALIA DE OSCOS",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "PEREZ FONSECA, JUAN",
+    "direccion": "C/ CELLERUELO  14-33510",
+    "codigo_postal": 33510,
+    "telefono": "985720181",
+    "poblacion": "POLA DE SIERO",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "GONZALEZ-SAAVEDRA GARCIA, EUGENIO",
+    "direccion": "C/ LEOPOLDO LUGONES,  18-33420",
+    "codigo_postal": 33420,
+    "telefono": "985261051",
+    "poblacion": "LUGONES",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "MORENO DE LA CAMPA, ANGELA Y MORENO DE LA CAMPA, ALEJANDRO",
+    "direccion": "AVDA. PRINCIPAL,  2-33429",
+    "codigo_postal": 33429,
+    "telefono": "985266511",
+    "poblacion": "LA FRESNEDA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "HEREDIA MEDIO, JOSE",
+    "direccion": "CRTA. GENERAL,   S/N-33840",
+    "codigo_postal": 33840,
+    "telefono": "985939495",
+    "poblacion": "POLA DE SOMIEDO",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "RAMIREZ DE DIEGO, COVADONGA Y RAMIREZ DE DIEGO, MARTIN",
+    "direccion": "PLAZA DEL PESCADOR,  S/N-33125",
+    "codigo_postal": 33125,
+    "telefono": "985586040",
+    "poblacion": "SAN JUAN DE LA ARENA",
+    "horario": "De 9 de la mañana de hoy a 9 de la mañana de mañana"
+  },
+  {
+    "nombre": "ALONSO GARCIA, ANA ISABEL",
+    "direccion": "PLAZA DE LOS MADRILEÑOS,  8-33740",
+    "codigo_postal": 33740,
+    "telefono": "985472858",
+    "poblacion": "TAPIA DE CASARIEGO",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "VILLACAMPA DELGADO, SARA",
+    "direccion": "C/ GRUPO MEROLLO,   1-33111",
+    "codigo_postal": 33111,
+    "telefono": "985764212",
+    "poblacion": "SAN MARTIN DE TEVERGA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "DE JUAN FERNANDEZ, PABLO",
+    "direccion": "C/ CALVO SOTELO  2-33870",
+    "codigo_postal": 33870,
+    "telefono": "985800773",
+    "poblacion": "TINEO",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "MARTINEZ FOJON, CARLOS",
+    "direccion": "C/ FERNANDEZ CAPALLEJA  28-33873",
+    "codigo_postal": 33873,
+    "telefono": "985806008",
+    "poblacion": "NAVELGAS",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "MEGIDO FERNANDEZ, ARANZAZU",
+    "direccion": "C/ CARRETERA DE POLA DE ALLANDE,  9-33875",
+    "codigo_postal": 33875,
+    "telefono": "985901106",
+    "poblacion": "GERA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "RIAL GOMEZ, SILVIA",
+    "direccion": "C/ CARRETERA GENERAL,  69-33876",
+    "codigo_postal": 33876,
+    "telefono": "985801271",
+    "poblacion": "SOTO DE LA BARCA",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "FERRAN MITTELBRUNN, PATRICIA",
+    "direccion": "C/ RAMON ASENJO  26-33700",
+    "codigo_postal": 33700,
+    "telefono": "985640073",
+    "poblacion": "LUARCA",
+    "horario": "De 9 de la mañana de hoy a 9 de la mañana de mañana"
+  },
+  {
+    "nombre": "LANDEIRA CALVIÑO, ALICIA FERNANDA",
+    "direccion": "CRTA. SAN MARTIN DE LUIÑA,  S/N-33784",
+    "codigo_postal": 33784,
+    "telefono": "985647384",
+    "poblacion": "BRIEVES",
+    "horario": "De 9 de la mañana de hoy a 9 de la mañana de mañana"
+  },
+  {
+    "nombre": "ANTOLIN DIAZ, CLARA Y ANTOLIN DIAZ, GUILLERMO",
+    "direccion": "C/ EMPEDRADA  3-33770",
+    "codigo_postal": 33770,
+    "telefono": "985634041",
+    "poblacion": "VEGADEO",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "CONCHESO MARTINEZ, ANA MARIA",
+    "direccion": "C/ LA PLAZA  S/N-33777",
+    "codigo_postal": 33777,
+    "telefono": "985621277",
+    "poblacion": "VILLANUEVA DE OSCOS",
+    "horario": "Guardia no presencial"
+  },
+  {
+    "nombre": "VILLAZON GONZALEZ, JOSE Y VILLAZON GONZALEZ, MARIA",
+    "direccion": "PLAZA DEL AYUNTAMIENTO  12-33300",
+    "codigo_postal": 33300,
+    "telefono": "985890344",
+    "poblacion": "VILLAVICIOSA",
+    "horario": "De 9,30 de la mañana de hoy a 9,30 de la mañana de mañana"
+  },
+  {
+    "nombre": "CAMPOAMOR SUAREZ, MARTA",
+    "direccion": "C/ LA PLAZA,  6-33717",
+    "codigo_postal": 33717,
+    "telefono": "985625056",
+    "poblacion": "VILLAYON",
+    "horario": "Guardia no presencial"
+  }
+]
