@@ -1,0 +1,11 @@
+[project]
+name = "sesion3-2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.135.3",
+    "fastapi-cli>=0.0.24",
+    "sqlalchemy>=2.0.49",
+]
