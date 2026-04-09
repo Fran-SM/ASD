@@ -72,7 +72,7 @@ def read_root():
     return {"mensaje": "¡Hola mundo!"}
 
 
-# --- RUTAS DE LA API (ENDPOINTS) ---
+# Rutas de la API
 
 @app.get("/tasks", response_model=list[Task])
 def list_tasks(repo: TaskRepository = Depends(get_repo)) -> list[Task]:
