@@ -3,36 +3,28 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, ConfigDict
 from sqlalchemy import create_engine, Column, Integer, String, Boolean
 from sqlalchemy.orm import declarative_base, sessionmaker, Session
-
+from sqlmodel import SQLModel, Field, create_engine, Session, select
 
 
 DATABASE_URL = "sqlite:///./tareas.db"
-
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base = declarative_base()
 
-
-
-class TaskDB(Base):
-    __tablename__ = "tasks"
-    id = Column(Integer, primary_key=True, index=True)
-    descripcion = Column(String, index=True)
-    completada = Column(Boolean, default=False)
-
-# Crea el fichero .db y las tablas si no existen
-Base.metadata.create_all(bind=engine)
+def create_db_and_tables():
+    """Crea las tablas en la base de datos, si no existían ya"""
+    SQLModel.metadata.create_all(engine)
 
 # Esquema de datos
 
-class TaskData(BaseModel):
+class TaskBase(SQLModel):
     descripcion: str
     completada: bool = False
 
-class Task(TaskData):
-    id: int
-    # Permite a Pydantic leer atributos de objetos SQLAlchemy (TaskDB)
-    model_config = ConfigDict(from_attributes=True)
+class Task(TaskBase, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+
+class TaskData(TaskBase):
+    pass
+
 
 # Capa de datos
 
@@ -40,64 +32,59 @@ class TaskRepository:
     def __init__(self, db: Session):
         self.db = db
 
-    def get_all(self) -> list[TaskDB]:
-        """Retorna la lista con todas las tareas desde la DB"""
-        return self.db.query(TaskDB).all()
+    def get_all(self) -> list[Task]:
+        """Obtiene todas las tareas"""
+        return self.db.exec(select(Task)).all()
 
-    def get_by_id(self, id: int) -> TaskDB | None:
-        """Busca y retorna una tarea por su id. Si no existe, retorna None"""
-        return self.db.query(TaskDB).filter(TaskDB.id == id).first()
+    def get_by_id(self, id: int) -> Task | None:
+        """Obtiene una tarea por su ID"""
+        return self.db.get(Task, id)
 
-    def add(self, task_data: TaskData) -> TaskDB:
-        """Crea una nueva tarea en la DB"""
-        nueva_tarea = TaskDB(**task_data.model_dump())
-        self.db.add(nueva_tarea)
+    def add(self, task_data: TaskData) -> Task:
+        """Crea y guarda una nueva tarea"""
+        tarea = Task.model_validate(task_data)
+        self.db.add(tarea)
         self.db.commit()
-        self.db.refresh(nueva_tarea)
-        return nueva_tarea
+        self.db.refresh(tarea)
+        return tarea
 
-    def update(self, id: int, task_data: TaskData) -> TaskDB | None:
-        """Actualiza los datos de una tarea en la DB"""
-        tarea_existente = self.get_by_id(id)
-        if tarea_existente:
-            # Actualizamos campo por campo
-            for key, value in task_data.model_dump().items():
-                setattr(tarea_existente, key, value)
+    def update(self, id: int, task_data: TaskData) -> Task | None:
+        """Actualiza una tarea existente"""
+        db_task = self.db.get(Task, id)
+        if db_task:
+            db_task.descripcion = task_data.descripcion
+            db_task.completada = task_data.completada
+            self.db.add(db_task)
             self.db.commit()
-            self.db.refresh(tarea_existente)
-            return tarea_existente
+            self.db.refresh(db_task)
+            return db_task
         return None
 
     def delete(self, id: int) -> bool:
-        """Elimina una tarea de la DB"""
-        tarea_existente = self.get_by_id(id)
-        if tarea_existente:
-            self.db.delete(tarea_existente)
+        """Elimina una tarea"""
+        db_task = self.db.get(Task, id)
+        if db_task:
+            self.db.delete(db_task)
             self.db.commit()
             return True
         return False
 
-
 # Inyección recursiva
 
-
 def get_db():
-    """Generador de sesiones de base de datos"""
-    db = SessionLocal()
-    try:
+    with Session(engine) as db:
         yield db
-    finally:
-        db.close()
 
 def get_repo(db: Session = Depends(get_db)) -> TaskRepository:
-    """Inyecta la sesión en el repositorio y lo retorna"""
     return TaskRepository(db)
+
+# Nos aseguramos de que la base de datos y las tablas se han creado
+create_db_and_tables()
 
 # Inicializacion y Rutas de la API
 
 app = FastAPI()
 
-# Añadimos soporte para CORS (para poder probar la API con el frontend)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
